@@ -69,7 +69,7 @@
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Allow RN-iOS-Native-Module to access your microphone</string>
 	<key>NSMotionUsageDescription</key>
-	<string>Allow RN-iOS-Native-Module to access your device's accelerometer</string>
+	<string>Allow RN-iOS-Native-Module to access your device&apos;s accelerometer</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Give RN-iOS-Native-Module permission to save photos</string>
 	<key>NSPhotoLibraryUsageDescription</key>
