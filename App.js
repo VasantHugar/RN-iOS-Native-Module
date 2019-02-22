@@ -8,7 +8,8 @@ const { LocationHelper } = NativeModules;
 var locationHelper = require('NativeModules').LocationHelper
 const calendarManagerEmitter = new NativeEventEmitter(LocationHelper);
 
-YellowBox.ignoreWarnings(['Class RCTCxxModule']);
+// YellowBox.ignoreWarnings(['Class RCTCxxModule']);
+console.disableYellowBox = true
 
 export default class App extends React.Component {
 
@@ -64,8 +65,9 @@ export default class App extends React.Component {
   }
 
   onPressStopHandler = () => {
-    locationHelper.stopUpdatingLocation()
+    
     if (this.state.isUpdatingLocation == true) {
+      locationHelper.stopUpdatingLocation()
       this.setState({ isUpdatingLocation: false });
     }
   }
